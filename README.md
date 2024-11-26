@@ -255,3 +255,5 @@ A interação com o GraphQL pode ser feita de duas formas
 - HTTP (`POST http://localhost:8081/grapqhql`)
 
 O GraphiQL é uma interface onde é possível testar as queries e mutations utilizando a sintaxe do GraphQL. Já a segunda opção geralmente é utilizada por outras aplicações que precisam se comunicar com um servidor GrapqhQL (ex. aplicativos, websites etc.)
+
+(e sim, o nome do projeto é graphql**rest**api, o que não faz sentido nenhum xD)
