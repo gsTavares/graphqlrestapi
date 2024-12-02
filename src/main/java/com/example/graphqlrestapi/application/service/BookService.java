@@ -41,4 +41,8 @@ public class BookService {
         return bookRepository.findByAuthorId(authorId);
     }
 
+    public List<Book> allBooks() {
+        return bookRepository.findAll();
+    }
+
 }

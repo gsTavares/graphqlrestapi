@@ -1,5 +1,7 @@
 package com.example.graphqlrestapi.application.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +28,10 @@ public class AuthorService {
 
     public Author authorById(String id) {
         return authorRepository.findById(id).orElse(null);
+    }
+
+    public List<Author> allAuthors() {
+        return authorRepository.findAll();
     }
 
 }

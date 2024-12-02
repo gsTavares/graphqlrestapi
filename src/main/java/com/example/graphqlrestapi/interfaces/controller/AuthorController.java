@@ -1,5 +1,7 @@
 package com.example.graphqlrestapi.interfaces.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;
@@ -19,6 +21,11 @@ public class AuthorController {
     @QueryMapping
     public Author authorById(@Argument String id) {
         return authorService.authorById(id);
+    }
+
+    @QueryMapping
+    public List<Author> allAuthors() {
+        return authorService.allAuthors();
     }
 
     @MutationMapping

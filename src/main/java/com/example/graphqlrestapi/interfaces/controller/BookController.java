@@ -33,4 +33,9 @@ public class BookController {
         return bookService.booksByAuthor(authorId);
     }
 
+    @QueryMapping
+    public List<Book> allBooks() {
+        return bookService.allBooks();
+    }
+
 }
